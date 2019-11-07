@@ -20,7 +20,7 @@
 
 * _Open Command Line_
 * _cd Desktop_
-* _Git Clone https://github.com/Ugonz86/TicTacToe.git_
+* _Git Clone https://github.com/Ugonz86/TicTacToe2.git_
 * _cd TicTacToe_
 * _Open index.html_
 
@@ -29,7 +29,7 @@
 _No bugs at the moment._
 
 # Github Link
-* _https://ugonz86.github.io/TicTacToe/_
+* _https://ugonz86.github.io/TicTacToe2/_
 
 ## Support and contact details
 
