@@ -1,8 +1,15 @@
 h1 {
   letter-spacing: 5px;
   font-weight: bold;
-  font-family: 'Syncopate', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -22,22 +29,38 @@ h1 {
   padding: 75px;
   text-align: center;
   background-color: #212529;
-  color: red;
+  color: #dc3545;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.grid-item2 {
+  border: 1px solid grey;
+  border-radius: 20px;
+  padding: 75px;
+  text-align: center;
+  background-color: #212529;
+  color: #dc3545;
   font-size: 30px;
   font-weight: bold;
 }
 
 .color {
-  color: red;
+  color: #dc3545;
   font-weight: bold;
 }
 
 .jumbotron {
   border-radius: 20px;
   margin-top: 50px;
+  text-align: center;
 }
 
 #gameDisplay {
+  display: none;
+}
+
+#scoreDisplay {
   display: none;
 }
 
@@ -47,6 +70,46 @@ h1 {
 }
 
 #player {
-  color: red;
+  color: #dc3545;
   font-weight: bold;
+}
+
+#playerX, #playerO {
+  /* width: 200px; */
+  padding: 15px;
+  height: 200px;
+  
+}
+
+.main_container {
+  height: 46px;
+  width: auto;
+  padding: 3px;
+  margin: 2px;
+  max-width: 300px;
+  background-color: #555555;
+  align-content: center;
+}
+.container_inner {
+  height: auto;
+  border: none;
+  background-color: #555555;
+  max-width: 290px;
+  vertical-align: center;
+  padding-top: 12px;
+  padding-left: 10px;
+  align-content: center;
+}
+ .num_tiles {
+  width:30px;
+  height: 30px;
+  background-color: #888888;
+  color: #ffffff;
+  font-size: 22px;
+  text-align: center;
+  line-height: 20px;
+  padding: 3px;
+  margin: 1.5px;
+  font-family: verdana;
+  vertical-align: center;
 }

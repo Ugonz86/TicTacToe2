@@ -2,6 +2,8 @@
 var EMPTY = "Empty";
 var X = "X";
 var O= "O";
+var playerScoreX = 0;
+var playerScoreO = 0;
 
 //Constructor the Space box.
 function Space (position) {
@@ -149,6 +151,8 @@ Game.prototype.computerMove = function () {
 
 $(document).ready(function() {
   var game;
+  
+
   $("#startButton").click(function () {
     $("#gameDisplay").fadeIn();
     $("#start").hide();
@@ -184,11 +188,16 @@ $(document).ready(function() {
     }
   });
 
-  $("#startOver").click(function () {
+  $("#displayScores").click(function () {
+    $("#scoreDisplay").fadeIn();
+    $("#result").hide();
+  });
+
+  $("#newGame").click(function () {
     $("#start").fadeIn();
     $(".grid-item").text("");
-    $("#result").hide();
-  })
+    $("#scoreDisplay").hide();
+  });
 });
 
 //Result display
@@ -200,8 +209,13 @@ function displayResultCondition (resultCondition) {
   } 
   else if (resultCondition === 'O') {
     $("#winner").text("The Computer Won!");
+    playerScoreO ++
+    $("#playerO").text(playerScoreO);
   }
   else {
     $("#winner").text("You won!");
+    playerScoreX ++
+    console.log(playerScoreX);
+    $("#playerX").text(playerScoreX);
   }
 }

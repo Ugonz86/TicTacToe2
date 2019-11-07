@@ -3,7 +3,7 @@
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Syncopate:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Tic Tac Toe</title>
@@ -42,7 +42,18 @@
       <div id="result">
         <div class="jumbotron">
           <h2><span id="winner"></span></h2>
-          <button type="button" class="btn btn-danger" id="startOver">Start Over</button>
+          <button type="button" class="btn btn-danger" id="displayScores">Show Scores</button>
+        </div>
+      </div>
+
+      <div id="scoreDisplay">
+        <div class="jumbotron">
+            <h2>Scores</h2>
+            <hr>
+            <div class="grid-item2">Player X<h5><span id="playerX"></span></h5></div>
+            <div class="grid-item2">Player O<h5><span id="playerO"></span></h5></div>
+            <hr>
+            <button type="button" class="btn btn-danger" id="newGame">New Game</button>
         </div>
       </div>
     </div>
